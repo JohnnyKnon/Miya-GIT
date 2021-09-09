@@ -128,3 +128,20 @@ button {
 .navbar-toggle {
   display: none;
 }
+
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+  /* Nav */
+  .navbar__logo {
+    font-size: 25px;
+    padding-left: 25px;
+  }
+  .navbar__items {
+    display: none;
+  }
+  .navbar-toggle {
+    display: block;
+    font-size: 20px;
+    padding-right: 25px;
+  }
+}
