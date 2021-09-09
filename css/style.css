@@ -62,3 +62,8 @@ button {
   border: none;
   outline: none;
 }
+
+/* When We use PC version hidden toggle btn */
+.navbar-toggle {
+  display: none;
+}
