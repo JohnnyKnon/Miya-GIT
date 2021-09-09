@@ -19,6 +19,7 @@
   --font-script: "Dancing Script", cursive;
   --font-english: "Poppins", sans-serif;
   --font-korean: "Noto Sans KR", sans-serif;
+  /* Font Sizes */
 
   /* Font Weight */
   --font-weight-bold: 700;
@@ -45,7 +46,8 @@ body {
   overflow-x: hidden;
 }
 
-ul {
+ul,
+li {
   list-style: none;
 }
 
