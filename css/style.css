@@ -63,6 +63,11 @@ button {
   outline: none;
 }
 
+/* Mix blend mode white bg */
+.mix-blend-mode-bg {
+  background-color: var(--color-white);
+}
+
 /* When We use PC version hidden toggle btn */
 .navbar-toggle {
   display: none;
