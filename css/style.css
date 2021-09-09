@@ -56,6 +56,10 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+p {
+  font-family: var(--font-korean);
+  font-weight: var(--font-weight-light);
+}
 button {
   background-color: transparent;
   cursor: pointer;
@@ -123,6 +127,7 @@ button {
 /* Section
 ------------------------------------------- */
 .section {
+  background-color: var(--color-white);
   max-width: var(--max-width);
   margin: auto;
   display: flex;
@@ -133,7 +138,6 @@ button {
 #home {
   position: relative;
   padding-top: 110px;
-  height: 650px;
 }
 .home__video {
   display: flex;
@@ -190,6 +194,68 @@ button {
   transition: all var(--anime-duration) ease-in-out;
 }
 
+/* About */
+#about {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  position: relative;
+  padding: 100px;
+}
+.about__title {
+  font-size: 45px;
+  font-family: var(--font-english);
+  font-weight: var(--font-weight-light);
+  border-bottom: 2px solid var(--color-black);
+  padding: 0 20px;
+  margin: auto;
+}
+
+.about__box-right {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  width: 100%;
+  padding-top: 60px;
+}
+.about-right-img {
+  background: url("../image/Ginza.png") no-repeat center/cover;
+  width: 250px;
+  height: 250px;
+}
+.about__welcome {
+  font-family: var(--font-korean);
+  font-size: 25px;
+  position: relative;
+  left: 10px;
+  top: -35px;
+}
+
+.about-p-first {
+  text-indent: 30px;
+  position: absolute;
+  text-align: justify;
+  word-spacing: 1px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  width: 172px;
+  font-size: 16px;
+  left: 270px;
+  top: 75px;
+}
+
+.about-p-second {
+  position: absolute;
+  text-align: justify;
+  word-spacing: 1px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  width: 172px;
+  font-size: 16px;
+  left: 460px;
+  top: 75px;
+}
+
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
   /* Nav */
@@ -215,5 +281,10 @@ button {
   .home__description {
     font-size: 15px;
     top: -40px;
+  }
+
+  /* About */
+  .about__title {
+    font-size: 30px;
   }
 }
