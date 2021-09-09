@@ -45,46 +45,39 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  /* mix-blend-mode */
+  background-color: var(--color-white);
 }
-
 ul,
 li {
   list-style: none;
 }
-
 a {
   text-decoration: none;
   cursor: pointer;
 }
-
 button {
   background-color: transparent;
   cursor: pointer;
   border: none;
   outline: none;
 }
-
-/* Mix blend mode white bg */
-.mix-blend-mode {
-  margin: 0;
-  padding: 0;
-  background-color: var(--color-white);
-  display: flex;
-  justify-content: center;
-}
-
-/* Nav */
+/* Nav 
+----------------------------------------*/
 #navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
   mix-blend-mode: difference;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
   max-width: var(--max-width);
   font-family: var(--font-english);
-  padding-top: 20px;
+  padding-top: 25px;
+  z-index: 1000;
 }
-
 .navbar__logo {
   color: var(--color-white);
   font-size: 30px;
@@ -92,7 +85,6 @@ button {
   font-weight: var(--font-weight-bold);
   letter-spacing: 4px;
 }
-
 .navbar__menu {
   color: var(--color-white);
   display: flex;
@@ -100,20 +92,17 @@ button {
   padding-right: 20px;
   gap: 0 28px;
 }
-
-.navbar__items a {
+.navbar__menu__items a {
   font-weight: var(--font-weight-light);
   font-size: 15px;
   position: relative;
   padding: 5px;
 }
-
-.navbar__items a:hover::after {
+.navbar__menu__items a:hover::after {
   width: 100%;
   transition: all var(--anime-duration) ease-in-out;
 }
-
-.navbar__items a::after {
+.navbar__menu__items a::after {
   content: "";
   width: 0;
   height: 2px;
@@ -123,10 +112,24 @@ button {
   background-color: var(--color-white);
   transition: all var(--anime-duration) ease-in-out;
 }
-
 /* When We use PC version hidden toggle btn */
 .navbar-toggle {
   display: none;
+}
+/* Section
+------------------------------------------- */
+.section {
+  max-width: var(--max-width);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+/* Home */
+#home {
+  position: relative;
+  top: 120px;
+  height: 800px;
+  background-color: rebeccapurple;
 }
 
 /* For below 768px screen width */
