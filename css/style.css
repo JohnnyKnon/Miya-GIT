@@ -48,24 +48,29 @@ body {
   /* mix-blend-mode */
   background-color: var(--color-white);
 }
+
 ul,
 li {
   list-style: none;
 }
+
 a {
   text-decoration: none;
   cursor: pointer;
 }
+
 p {
   font-family: var(--font-korean);
   font-weight: var(--font-weight-light);
 }
+
 button {
   background-color: transparent;
   cursor: pointer;
   border: none;
   outline: none;
 }
+
 /* Nav 
 ----------------------------------------*/
 #navbar {
@@ -82,6 +87,7 @@ button {
   padding-top: 25px;
   z-index: 1000;
 }
+
 .navbar__logo {
   color: var(--color-white);
   font-size: 30px;
@@ -89,6 +95,7 @@ button {
   font-weight: var(--font-weight-bold);
   letter-spacing: 4px;
 }
+
 .navbar__menu {
   color: var(--color-white);
   display: flex;
@@ -96,16 +103,19 @@ button {
   padding-right: 20px;
   gap: 0 28px;
 }
+
 .navbar__menu__items a {
   font-weight: var(--font-weight-light);
   font-size: 15px;
   position: relative;
   padding: 5px;
 }
+
 .navbar__menu__items a:hover::after {
   width: 100%;
   transition: all var(--anime-duration) ease-in-out;
 }
+
 .navbar__menu__items a::after {
   content: "";
   width: 0;
@@ -116,29 +126,34 @@ button {
   background-color: var(--color-white);
   transition: all var(--anime-duration) ease-in-out;
 }
+
 /* When We use PC version hidden toggle btn */
 .navbar-toggle {
   display: none;
 }
+
 /* Main */
 #main {
   background-color: var(--color-white);
 }
+
 /* Section
 ------------------------------------------- */
 .section {
   background-color: var(--color-white);
   max-width: var(--max-width);
   margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
+
 /* Home */
 #home {
   position: relative;
   padding-top: 110px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
 .home__video {
   display: flex;
   justify-content: center;
@@ -147,6 +162,7 @@ button {
   height: 450px;
   background-color: var(--color-dark-grey);
 }
+
 .home__video__txt {
   font-family: var(--font-english);
   font-weight: var(--font-weight-light);
@@ -155,6 +171,7 @@ button {
   mix-blend-mode: difference;
   color: var(--color-white);
 }
+
 .home__contents {
   display: flex;
   flex-direction: column;
@@ -162,12 +179,14 @@ button {
   position: relative;
   top: -60px;
 }
+
 .home__title {
   font-family: var(--font-script);
   font-weight: var(--font-weight-micro);
   font-size: 75px;
   color: var(--color-skyblue);
 }
+
 .home__description {
   position: relative;
   top: -50px;
@@ -175,6 +194,7 @@ button {
   font-family: var(--font-english);
   font-weight: var(--font-weight-light);
 }
+
 .home__line {
   position: relative;
   top: -30px;
@@ -182,6 +202,7 @@ button {
   height: 1px;
   background-color: var(--color-blue-grey);
 }
+
 .home__button {
   font-family: var(--font-english);
   font-weight: var(--font-weight-light);
@@ -189,6 +210,7 @@ button {
   position: relative;
   transition: all var(--anime-duration) ease-in-out;
 }
+
 .home__button:hover {
   color: var(--color-blue-grey);
   transition: all var(--anime-duration) ease-in-out;
@@ -197,63 +219,6 @@ button {
 /* About */
 #about {
   display: flex;
-  flex-direction: column;
-  align-content: center;
-  position: relative;
-  padding: 100px;
-}
-.about__title {
-  font-size: 45px;
-  font-family: var(--font-english);
-  font-weight: var(--font-weight-light);
-  border-bottom: 2px solid var(--color-black);
-  padding: 0 20px;
-  margin: auto;
-}
-
-.about__box-right {
-  display: flex;
-  justify-content: flex-start;
-  position: relative;
-  width: 100%;
-  padding-top: 60px;
-}
-.about-right-img {
-  background: url("../image/Ginza.png") no-repeat center/cover;
-  width: 250px;
-  height: 250px;
-}
-.about__welcome {
-  font-family: var(--font-korean);
-  font-size: 25px;
-  position: relative;
-  left: 10px;
-  top: -35px;
-}
-
-.about-p-first {
-  text-indent: 30px;
-  position: absolute;
-  text-align: justify;
-  word-spacing: 1px;
-  line-height: 20px;
-  letter-spacing: 1px;
-  width: 172px;
-  font-size: 16px;
-  left: 270px;
-  top: 75px;
-}
-
-.about-p-second {
-  position: absolute;
-  text-align: justify;
-  word-spacing: 1px;
-  line-height: 20px;
-  letter-spacing: 1px;
-  width: 172px;
-  font-size: 16px;
-  left: 460px;
-  top: 75px;
 }
 
 /* For below 768px screen width */
@@ -263,28 +228,32 @@ button {
     font-size: 25px;
     padding-left: 25px;
   }
+
   .navbar__menu__items {
     display: none;
   }
+
   .navbar-toggle {
     display: block;
     font-size: 20px;
     padding-right: 25px;
   }
+
   /* Home */
   .home__contents {
     top: -30px;
   }
+
   .home__title {
     font-size: 50px;
   }
+
   .home__description {
     font-size: 15px;
     top: -40px;
   }
 
-  /* About */
-  .about__title {
-    font-size: 30px;
+  .home__line {
+    width: 150px;
   }
 }
