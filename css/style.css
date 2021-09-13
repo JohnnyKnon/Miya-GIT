@@ -329,6 +329,14 @@ button {
 }
 
 /* For below 768px screen width */
+@media screen and (max-width: 768px) {
+  /* About */
+  .about__title {
+    width: 100%;
+  }
+}
+
+/* For below 760px screen width */
 @media screen and (max-width: 760px) {
   /* Nav */
   .navbar__logo {
