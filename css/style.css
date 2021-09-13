@@ -65,6 +65,7 @@ p {
 }
 
 button {
+  font-family: var(--font-korean);
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -220,15 +221,97 @@ button {
 #about {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.about__box__wrap {
+  display: inline-flex;
+  flex-direction: row;
 }
 
 .about__title {
   border-bottom: 2px solid var(--color-black);
-  width: 100%;
+  width: 65%;
+  font-size: 40px;
   font-family: var(--font-english);
   font-weight: var(--font-weight-light);
-  font-size: 40px;
   padding-left: 20px;
+}
+
+.about__box__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.about__img {
+  width: 300px;
+  height: 300px;
+  background: url("../image/Ginza.png") no-repeat center/cover;
+}
+
+.about__visibility__style {
+  color: var(--color-white);
+  visibility: hidden;
+  position: relative;
+  top: 8px;
+  opacity: 0%;
+  transition: all var(--anime-duration) ease-in-out;
+}
+
+.about__box__title {
+  font-size: 30px;
+  font-family: var(--font-english);
+  font-weight: var(--font-weight-light);
+}
+
+.about__box__btn {
+  border: 1px solid var(--color-white);
+  padding: 5px 20px;
+  border-radius: 5px;
+  transition: all var(--anime-duration) ease-in-out;
+}
+
+.about__box__btn:hover {
+  border: 0;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  transition: all var(--anime-duration) ease-in-out;
+}
+
+.about__box__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__box__right__title {
+  font-size: 35px;
+  position: relative;
+  left: 15px;
+  text-shadow: 3px 3px 0px var(--color-skyblue);
+}
+
+.about__content {
+  text-align: justify;
+  position: relative;
+  top: -10px;
+  left: 15px;
+  width: 400px;
+}
+
+/* About visible */
+.about__img:hover {
+  background-color: var(--color-dark-grey);
+  background-image: none;
+}
+
+.about__img:hover .about__visibility__style {
+  top: 0;
+  visibility: visible;
+  opacity: 100%;
+  transition: all var(--anime-duration) ease-in-out;
 }
 
 /* For below 768px screen width */
@@ -265,5 +348,10 @@ button {
 
   .home__line {
     width: 150px;
+  }
+
+  /* About */
+  .about__title {
+    font-size: 30px;
   }
 }
