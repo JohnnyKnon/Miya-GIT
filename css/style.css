@@ -72,6 +72,13 @@ button {
   outline: none;
 }
 
+.titles {
+  border-bottom: 2px solid var(--color-black);
+  font-size: 40px;
+  font-family: var(--font-english);
+  font-weight: var(--font-weight-light);
+}
+
 /* Nav 
 ----------------------------------------*/
 #navbar {
@@ -231,9 +238,7 @@ button {
 }
 
 .about__title {
-  border-bottom: 2px solid var(--color-black);
   width: 65%;
-  font-size: 40px;
   font-family: var(--font-english);
   font-weight: var(--font-weight-light);
   padding-left: 20px;
@@ -328,11 +333,35 @@ button {
   transition: all var(--anime-duration) ease-in-out;
 }
 
+/* Work */
+#work {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  top: 35px;
+}
+
+.section-work {
+  background-color: var(--color-light-grey);
+  width: 100%;
+}
+
+.work__max-width {
+  max-width: 1200px;
+}
+
+.work__title {
+  padding: 5px 100px;
+}
+
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
   /* About */
   .about__title {
     width: 100%;
+    margin: auto;
   }
 }
 
