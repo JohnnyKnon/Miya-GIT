@@ -13,7 +13,7 @@
     <!-- JavaScript Link -->
     <script src="js/main.js" defer></script>
     
-    <title>MIYA | Main</title>
+    <title>미야 | 메인</title>
 </head>
 <body> 
 <!-- Nav -->
@@ -21,15 +21,25 @@
         <a href="#" class="navbar__logo">MIYA</a>
         <div class="navbar__items__wrap">
             <ul class="navbar__menu">
-                <li class="navbar__menu__items"><a>HOME</a></li>
+                <li class="navbar__menu__items"><a href="#">HOME</a></li>
                 <li class="navbar__menu__items"><a>ABOUT</a></li>
                 <li class="navbar__menu__items"><a>SERVICE</a></li>
                 <li class="navbar__menu__items"><a>WORK</a></li>
                 <li class="navbar__menu__items"><a>CONTACT</a></li>
-                <li class="navbar-toggle"><a><i class="fas fa-bars"></i></a></li>
+                <li class="navbar-toggle"><a class="toggle__bar"><i class="fas fa-bars"></i></a></li>
             </ul>
         </div>
     </nav>
+
+<!-- Mobile Nav -->
+    <div class="mobile__nav">
+        <button class="close__btn"><i class="fas fa-times"></i></button>
+        <li class="mobile__navbar__menu__items"><a href="#">HOME</a></li>
+        <li class="mobile__navbar__menu__items"><a>ABOUT</a></li>
+        <li class="mobile__navbar__menu__items"><a>SERVICE</a></li>
+        <li class="mobile__navbar__menu__items"><a>WORK</a></li>
+        <li class="mobile__navbar__menu__items"><a>CONTACT</a></li>
+    </div>
 <!-- Main -->
     <main id="main">
         <!-- Home -->
@@ -54,6 +64,7 @@
         <section id="about" class="section">
             <h1 class="about__title titles">About</h1>
             <div class="about__box__wrap">
+                <!-- About Img  -->
                 <div class="about__box__left about__img">
                     <h3 class="about__box__title about__visibility__style"i>About Us!</h3>
                     <button class="about__box__btn about__visibility__style">바로가기</button>
@@ -72,7 +83,7 @@
         <!-- Work -->
         <section id="work">
             <div class="max-width-work">
-                <h1 class="work__title title">Work</h1>
+                <h1 class="work__title titles">Work</h1>
                 <!-- Work Design -->
                 <div class="work__top-wrap">
                     <div class="flex-box">
@@ -114,10 +125,25 @@
                 </div>
             </div>
         </section>
-        <!-- Contact -->
-        <section id="contact" class="section">
-            
-        </section>
     </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <h1 class="footer__title">MIYA.DESIGN.HOUSE</h1>
+        <div class="footer__wrap">
+            <div class="footer__info">
+                <h4 class="footer__info__ceo">CEO | 김정미</h4>
+                <p class="footer__info__tel">Tel | 070-4610-1417</p>
+                <p class="footer__info__email">E-mail | data@miyadesign.kr</p>
+                <p class="footer__info__address">〒 경기도 성남시 분당구 판교로 700 분당테크노파크 E동 111호</p>
+                <button class="footer__info__pdf">PDF DOWNLOAD</button>
+            </div>
+            <div class="footer__copy">
+                <p class="copyright">
+                    ⓒMiyadesignhouse 2019 all rights reserved
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
