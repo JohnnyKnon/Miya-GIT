@@ -64,6 +64,12 @@ p {
   font-weight: var(--font-weight-light);
 }
 
+h1 {
+  font-size: 60px;
+  font-family: var(--font-english);
+  font-weight: var(--font-weight-regular);
+}
+
 button {
   font-family: var(--font-korean);
   background-color: transparent;
@@ -195,6 +201,96 @@ button {
 /* When We use PC version hidden toggle btn */
 .navbar-toggle {
   display: none;
+}
+
+/* Main */
+#main {
+  background-color: white;
+  padding: 130px 0;
+  max-width: var(--max-width);
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#intro {
+  display: flex;
+  flex-direction: row;
+}
+
+.intro__right {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.first-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.intro__num {
+  display: inline-block;
+  background-color: var(--color-white);
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  padding-top: 75px;
+}
+
+.intro__img {
+  width: 250px;
+  height: 250px;
+}
+
+.img-first {
+  background: url("../image/Ginza.png") no-repeat center/cover;
+  margin: auto;
+}
+
+.second-box {
+  display: flex;
+  flex-direction: row;
+  margin-top: -60px;
+}
+
+.img-second {
+  background: url("../image/Ginza.png") no-repeat center/cover;
+  margin: auto;
+}
+
+.intro__subject {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  padding-left: 15px;
+  background-color: #b5c3c8;
+  color: #f1f2f5;
+}
+.intro__left {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.intro__title {
+  margin-top: 265px;
+  margin-left: 20px;
+  font-size: 35px;
+  font-family: var(--font-korean);
+  font-weight: var(--font-weight-light);
+}
+
+.intro__article {
+  text-align: justify;
+  text-indent: 20px;
+  font-size: 16px;
+  width: 600px;
+  margin-top: -8px;
+  margin-left: 20px;
+  word-spacing: 3.5px;
+  line-height: 30px;
 }
 
 /* For below 760px screen width */

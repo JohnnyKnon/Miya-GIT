@@ -366,7 +366,6 @@ button {
   position: relative;
   left: 15px;
   top: -8px;
-  text-shadow: 3px 3px 0px var(--color-skyblue);
 }
 
 .about__content {
