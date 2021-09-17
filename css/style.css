@@ -642,12 +642,12 @@ button {
   .about__box__right__title {
     font-size: 25px;
     position: relative;
-    left: -217px;
+    left: -235px;
     top: 230px;
   }
 
   .about__content {
-    left: -210px;
+    left: -235px;
     top: 200px;
     width: 210px;
     word-spacing: 2.5px;
@@ -661,7 +661,7 @@ button {
     font-family: var(--font-script);
     color: var(--color-blue-grey);
     opacity: 60%;
-    left: -260px;
+    left: -290px;
     top: 187px;
     font-size: 100px;
     z-index: 5;
