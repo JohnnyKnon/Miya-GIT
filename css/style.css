@@ -551,6 +551,10 @@ button {
   font-family: var(--font-korean);
 }
 
+.footer__info h4 {
+  font-size: 20px;
+}
+
 .footer__info p {
   font-size: 15px;
   font-weight: var(--font-weight-light);

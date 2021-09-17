@@ -209,7 +209,7 @@ button {
   padding: 90px 0;
   max-width: var(--max-width);
   margin: auto;
-  height: 820px;
+  height: 830px;
 }
 
 /* Intro */
@@ -330,6 +330,10 @@ button {
   font-family: var(--font-korean);
 }
 
+.footer__info h4 {
+  font-size: 20px;
+}
+
 .footer__info p {
   font-size: 15px;
   font-weight: var(--font-weight-light);
@@ -366,7 +370,7 @@ button {
   #main {
     padding: 80px 0;
     z-index: 5;
-    height: 1000px;
+    height: 1050px;
   }
 
   .intro__left {
