@@ -288,6 +288,31 @@ button {
   line-height: 30px;
 }
 /* Certification */
+#certification {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.certification__article {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 50px;
+  margin-left: 890px;
+  margin-top: 20px;
+}
+
+.certification__kidp {
+  background: url("../image/kidp.png") no-repeat center/cover;
+  width: 100px;
+  height: 50px;
+}
+
+.certification__woman {
+  background: url("../image/woman_logo.png") no-repeat center/cover;
+  width: 80px;
+  height: 80px;
+}
 
 /* Footer */
 #footer {
@@ -358,6 +383,8 @@ button {
   font-size: 12px;
   color: var(--color-blue-grey);
 }
+
+/* For below 1120px screen width */
 
 /* For below 760px screen width */
 @media screen and (max-width: 760px) {
