@@ -209,7 +209,7 @@ button {
   padding: 90px 0;
   max-width: var(--max-width);
   margin: auto;
-  height: 830px;
+  height: 840px;
 }
 
 /* Intro */
@@ -330,10 +330,6 @@ button {
   font-family: var(--font-korean);
 }
 
-.footer__info h4 {
-  font-size: 20px;
-}
-
 .footer__info p {
   font-size: 15px;
   font-weight: var(--font-weight-light);
@@ -430,14 +426,22 @@ button {
   }
 }
 
-@media screen and (max-width: 512px) {
+@media screen and (max-width: 520px) {
+  /* Intro */
+  .intro__article {
+    width: 400px;
+    margin-left: 1px;
+  }
+}
+
+@media screen and (max-width: 499px) {
   /* Intro */
   #main {
     height: 1450px;
   }
 
   .intro__about {
-    padding-left: 120px;
+    padding-left: 60px;
   }
 
   .img-first {
