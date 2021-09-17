@@ -206,9 +206,10 @@ button {
 /* Main */
 #main {
   background-color: white;
-  padding: 180px 0;
+  padding: 90px 0;
   max-width: var(--max-width);
   margin: auto;
+  height: 820px;
 }
 
 /* Intro */
@@ -216,7 +217,7 @@ button {
   display: flex;
 }
 
-.intro__right {
+.intro__left {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -227,7 +228,7 @@ button {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.intro__num {
+.intro__about {
   display: inline-block;
   background-color: var(--color-white);
   width: 250px;
@@ -266,7 +267,7 @@ button {
   color: #f1f2f5;
 }
 
-.intro__left {
+.intro__right {
   display: flex;
   flex-direction: column;
 }
@@ -288,33 +289,6 @@ button {
   margin-left: 20px;
   word-spacing: 3.5px;
   line-height: 30px;
-}
-
-/* Certification */
-#certification {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.certification__article {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0 50px;
-  margin-left: 890px;
-  margin-top: 20px;
-}
-
-.certification__kidp {
-  background: url("../image/kidp.png") no-repeat center/cover;
-  width: 100px;
-  height: 50px;
-}
-
-.certification__woman {
-  background: url("../image/woman_logo.png") no-repeat center/cover;
-  width: 80px;
-  height: 80px;
 }
 
 /* Footer */
@@ -387,6 +361,31 @@ button {
   color: var(--color-blue-grey);
 }
 
+@media screen and (max-width: 1200px) {
+  /* Intro */
+  #main {
+    padding: 80px 0;
+    z-index: 5;
+    height: 1000px;
+  }
+
+  .intro__left {
+    margin: auto;
+  }
+
+  .intro__right {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 400px;
+    transform: translateX(-50%);
+  }
+
+  #footer {
+    z-index: 1;
+  }
+}
+
 /* For below 760px screen width */
 @media screen and (max-width: 760px) {
   /* Nav */
@@ -405,14 +404,59 @@ button {
     padding-right: 25px;
   }
 
+  /* Intro */
+  #main {
+    height: 900px;
+  }
+
+  .intro__article {
+    width: 500px;
+    margin-left: 1px;
+  }
+
   /* Footer */
   #footer {
-    top: 40px;
+    margin-top: 200px;
   }
   .footer__title {
     font-size: 28px;
   }
   .footer__info p {
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  /* Intro */
+  #main {
+    height: 1450px;
+  }
+
+  .intro__about {
+    padding-left: 120px;
+  }
+
+  .img-first {
+    margin-top: -130px;
+  }
+
+  .second-box {
+    margin-top: -5px;
+  }
+
+  .intro__right {
+    margin-top: 420px;
+  }
+
+  .intro__title {
+    font-size: 25px;
+    text-align: left;
+    margin-left: 36px;
+  }
+
+  .intro__article {
+    width: 300px;
+    text-indent: 0;
+    margin-left: 1px;
   }
 }
