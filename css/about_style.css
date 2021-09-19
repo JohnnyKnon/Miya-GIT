@@ -206,10 +206,10 @@ button {
 /* Main */
 #main {
   background-color: white;
-  padding: 90px 0;
+  padding: 120px 0;
   max-width: var(--max-width);
   margin: auto;
-  height: 840px;
+  height: 860px;
 }
 
 /* Intro */
