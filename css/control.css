@@ -1,0 +1,175 @@
+/* SELECTION PART */
+*::selection {
+  background: transparent;
+  color: burlywood;
+}
+
+/* Variables */
+:root {
+  /* color */
+  --color-black: #000;
+  --color-white: #fff;
+  --color-skyblue: #96d5cf;
+  --color-blue-grey: #c2c9d3;
+  --color-light-grey: #f5f5f5;
+  --color-dark-grey: rgb(44, 44, 44);
+  --color-brown: #6f4f28;
+
+  /* Font Family */
+  --font-script: "Dancing Script", cursive;
+  --font-english: "Poppins", sans-serif;
+  --font-korean: "Noto Sans KR", sans-serif;
+  /* Font Sizes */
+
+  /* Font Weight */
+  --font-weight-bold: 700;
+  --font-weight-regular: 600;
+  --font-weight-light: 400;
+  --font-weight-micro: 100;
+  /* Noto Font */
+  --noto-weight-regular: 500;
+
+  /* Time Duration */
+  --anime-duration: 350ms;
+
+  /* Sizes */
+  --max-width: 1200px;
+}
+
+/* Universe */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  /* mix-blend-mode */
+  background-color: var(--color-white);
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+p {
+  font-family: var(--font-korean);
+  font-weight: var(--font-weight-light);
+}
+
+h1 {
+  font-size: 60px;
+  font-family: var(--font-english);
+  font-weight: var(--font-weight-regular);
+}
+
+button {
+  font-family: var(--font-korean);
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Only Main */
+.titles {
+  border-bottom: 2px solid var(--color-black);
+  font-size: 40px;
+  font-family: var(--font-english);
+  font-weight: var(--font-weight-light);
+}
+
+/* Footer */
+#footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: var(--color-black);
+  width: 100%;
+}
+
+.footer__title {
+  font-family: var(--font-english);
+  font-weight: var(--font-weight-light);
+  letter-spacing: 5px;
+  color: var(--color-white);
+  font-size: 60px;
+  border-bottom: 0.25px solid var(--color-white);
+  margin: 15px auto;
+}
+
+.footer__wrap {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: auto;
+  max-width: 1200px;
+}
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__info h4,
+.footer__info p {
+  color: var(--color-white);
+  font-family: var(--font-korean);
+}
+
+.footer__info h4 {
+  font-size: 25px;
+}
+
+.footer__info p {
+  font-size: 15px;
+  font-weight: var(--font-weight-light);
+}
+
+.footer__info__pdf {
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+  padding: 15px 30px;
+  transition: all var(--anime-duration) ease;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer__info__pdf:hover {
+  color: var(--color-black);
+  border: 1px solid var(--color-black);
+  background-color: var(--color-white);
+  transition: all var(--anime-duration) ease;
+}
+
+.footer__copy {
+  display: flex;
+  justify-content: center;
+}
+
+.copyright {
+  font-size: 12px;
+  color: var(--color-blue-grey);
+}
+
+/* For below 760px screen width */
+@media screen and (max-width: 760px) {
+  /* Footer */
+  #footer {
+    top: 40px;
+  }
+  .footer__title {
+    font-size: 28px;
+  }
+  .footer__info p {
+    font-size: 12px;
+  }
+}
