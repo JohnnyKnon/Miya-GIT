@@ -33,10 +33,13 @@ body {
   justify-content: flex-end;
   max-width: 1200px;
   margin: auto;
-  z-index: 100;
 }
 .sideMenu {
   position: fixed;
+  top: 400px;
+  padding-right: 40px;
+  border: 1px solid var(--color-white);
+  z-index: 100;
 }
 
 .sideMenu__menu {
@@ -145,6 +148,11 @@ body {
     font-size: 55px;
   }
 
+  /* Side Menu */
+  .sideMenu {
+    display: none;
+  }
+
   /* Logo Title Description */
   .logo__title {
     font-size: 30px;
@@ -155,11 +163,25 @@ body {
   }
 
   /* Kidp */
+  .kidp__wrap {
+    margin-top: -85px;
+  }
+
   .kidp__img {
     width: 200px;
   }
 
   .kidp__text__wrap {
     left: 20px;
+  }
+
+  /* Woman */
+  .woman__img {
+    width: 200px;
+    margin-right: 20px;
+  }
+
+  .woman__text__wrap {
+    right: 40px;
   }
 }
