@@ -22,8 +22,40 @@ body {
 
 /* Main */
 #main {
+  position: relative;
   max-width: 1200px;
   margin: auto;
+}
+
+.sideMenu__wrap {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1200px;
+  margin: auto;
+}
+.sideMenu {
+  position: fixed;
+}
+
+.sideMenu__menu {
+  text-align: center;
+}
+
+.move {
+  color: var(--color-white);
+  font-family: var(--font-english);
+  font-weight: var(--font-weight-bold);
+  font-size: 20px;
+}
+
+.sideMenu__menu__items {
+  font-family: var(--font-english);
+  padding: 20px 0;
+  font-size: 13px;
+}
+
+.sideMenu__menu__items a {
+  color: var(--color-white);
 }
 
 /* Certification */
@@ -46,7 +78,7 @@ body {
 
 .kidp__text__wrap {
   position: absolute;
-  left: 200px;
+  left: 230px;
   top: 40px;
 }
 
