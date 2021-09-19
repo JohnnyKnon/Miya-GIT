@@ -72,6 +72,17 @@ body {
   flex-direction: column;
 }
 
+/* Logo Title Description */
+.logo__title {
+  color: var(--color-white);
+  font-size: 50px;
+}
+
+.logo__description {
+  color: var(--color-skyblue);
+  font-size: 30px;
+}
+
 /* Kidp
 --------------------------------------- */
 .kidp__wrap {
@@ -82,7 +93,6 @@ body {
 
 .kidp__img {
   position: absolute;
-  left: 100px;
   width: 350px;
 }
 
@@ -92,23 +102,64 @@ body {
   top: 40px;
 }
 
-.kidp__title {
-  color: var(--color-white);
-  font-size: 50px;
-}
-
-.kidp__description {
-  color: var(--color-skyblue);
-  font-size: 30px;
-}
-
 /* Woman
 ----------------------------------- */
 .woman__wrap {
+  position: relative;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  margin: 420px 0;
+}
+.woman__text__wrap {
+  position: absolute;
+  right: 230px;
+  top: 100px;
+}
+
+.woman__img {
+  width: 350px;
+}
+
+.woman__description {
+  text-align: right;
+}
+
+/* For below 1210px screen width */
+@media screen and (max-width: 1210px) {
+  /* Side Menu */
+  .sideMenu__wrap {
+    padding-right: 40px;
+  }
 }
 
 /* For below 760px screen width */
 @media screen and (max-width: 760px) {
+}
+
+/* For below 499px screen width */
+@media screen and (max-width: 499px) {
+  /* Header */
+  .header__title {
+    color: var(--color-white);
+    font-size: 55px;
+  }
+
+  /* Logo Title Description */
+  .logo__title {
+    font-size: 30px;
+  }
+
+  .logo__description {
+    font-size: 20px;
+  }
+
+  /* Kidp */
+  .kidp__img {
+    width: 200px;
+  }
+
+  .kidp__text__wrap {
+    left: 20px;
+  }
 }
