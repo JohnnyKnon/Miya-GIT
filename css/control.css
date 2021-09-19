@@ -162,7 +162,7 @@ button {
 
 /* For below 760px screen width */
 @media screen and (max-width: 760px) {
-  /* Footer */
+  /*(NOT INCLUDE ABOUT FOOTER) Footer */
   #footer {
     top: 40px;
   }
