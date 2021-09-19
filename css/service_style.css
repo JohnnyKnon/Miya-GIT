@@ -27,11 +27,13 @@ body {
   margin: auto;
 }
 
+/* Side Menu */
 .sideMenu__wrap {
   display: flex;
   justify-content: flex-end;
   max-width: 1200px;
   margin: auto;
+  z-index: 100;
 }
 .sideMenu {
   position: fixed;
@@ -51,11 +53,17 @@ body {
 .sideMenu__menu__items {
   font-family: var(--font-english);
   padding: 20px 0;
-  font-size: 13px;
 }
 
 .sideMenu__menu__items a {
-  color: var(--color-white);
+  color: var(--color-blue-grey);
+  font-size: 15px;
+  transition: all var(--anime-duration) ease;
+}
+
+.sideMenu__menu__items a:hover {
+  color: var(--color-skyblue);
+  transition: all var(--anime-duration) ease;
 }
 
 /* Certification */
@@ -64,6 +72,8 @@ body {
   flex-direction: column;
 }
 
+/* Kidp
+--------------------------------------- */
 .kidp__wrap {
   position: relative;
   display: flex;
@@ -90,6 +100,13 @@ body {
 .kidp__description {
   color: var(--color-skyblue);
   font-size: 30px;
+}
+
+/* Woman
+----------------------------------- */
+.woman__wrap {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* For below 760px screen width */
