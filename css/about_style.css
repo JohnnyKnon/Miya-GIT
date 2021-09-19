@@ -1,3 +1,11 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  /* mix-blend-mode */
+  background-color: var(--color-white);
+}
+
 /* Main */
 #main {
   background-color: var(--color-white);
