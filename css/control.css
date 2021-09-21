@@ -70,14 +70,6 @@ button {
   outline: none;
 }
 
-/* Only Main */
-.titles {
-  border-bottom: 2px solid var(--color-black);
-  font-size: 40px;
-  font-family: var(--font-english);
-  font-weight: var(--font-weight-light);
-}
-
 /* Footer */
 #footer {
   position: relative;
