@@ -70,6 +70,22 @@ button {
   outline: none;
 }
 
+/* Service Texts Only */
+.service__texts {
+  color: var(--color-white);
+  text-align: justify;
+  text-indent: 10px;
+  line-height: 30px;
+  word-spacing: 1px;
+}
+
+/* Service Titles Only */
+.service__titles {
+  color: var(--color-white);
+  font-family: var(--font-korean);
+  font-size: 45px;
+}
+
 /* Footer */
 #footer {
   position: relative;
