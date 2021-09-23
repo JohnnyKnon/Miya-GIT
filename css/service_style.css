@@ -17,6 +17,7 @@ body {
 
 .header__title {
   color: var(--color-white);
+  font-family: var(--font-english);
   font-size: 70px;
 }
 

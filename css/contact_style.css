@@ -5,8 +5,23 @@ body {
   /* mix-blend-mode */
   background-color: var(--color-white);
 }
-
+/* Header Main */
+#header,
 #main {
   max-width: 1200px;
   margin: auto;
 }
+
+/* Header */
+.header__title {
+  font-family: var(--font-english);
+  font-size: 70px;
+  position: relative;
+  top: 100px;
+  text-align: right;
+}
+
+/* Main
+________________________________ */
+
+/* agree */
