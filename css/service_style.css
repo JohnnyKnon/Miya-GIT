@@ -27,112 +27,11 @@ body {
   margin: auto;
 }
 
-/* About Service */
-#aboutService {
-  position: relative;
-  top: -140px;
-  height: 750px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-.aboutService__img {
-  background: url("../image/Ginza.png") no-repeat center/cover;
-  width: 600px;
-  height: 600px;
-}
-
-.aboutService__title {
-  padding-left: 40px;
-  margin-top: 175px;
-}
-
-.aboutService__txt {
-  width: 360px;
-  padding-left: 40px;
-  margin-top: -10px;
-}
-/* Brand */
-#brand {
-  display: flex;
-  height: 750px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-
-.brand__content {
-  margin-top: -45px;
-  padding-right: 40px;
-}
-
-.brand__txt {
-  font-size: 17px;
-  width: 520px;
-}
-
-.brand__txt__type {
-  font-size: 14px;
-  color: var(--color-skyblue);
-  font-weight: var(--noto-weight-regular);
-}
-
-.brand__img {
-  background: url(../image/Ginza.png) no-repeat center/cover;
-  width: 600px;
-  height: 400px;
-}
-
-/* For below 1200px screen width */
-@media screen and (max-width: 1300px) {
-  /* Only justfiyContent */
-  .aboutService {
-    justify-content: center;
-  }
-}
-/* For below 990px screen width */
-@media screen and (max-width: 990px) {
-  /* AboutService */
-  .aboutService {
-    justify-content: center;
-  }
-
-  .aboutService__img {
-    width: 350px;
-    height: 350px;
-  }
-
-  .aboutService__title {
-    margin-top: 0px;
-    padding-left: 20px;
-  }
-
-  .aboutService__txt {
-    padding-left: 20px;
-    margin-top: -20px;
-    font-size: 14px;
-  }
-}
-
-/* For below 499px screen width */
+/* For below 600px screen width */
 @media screen and (max-width: 600px) {
   /* Header */
   .header__title {
     color: var(--color-white);
     font-size: 55px;
-  }
-
-  /* AboutSerivce */
-
-  .aboutService__title {
-    margin-top: 30px;
-    padding-left: 5px;
-  }
-
-  .aboutService__txt {
-    margin: auto;
-    padding: 0;
-    width: 325px;
   }
 }
