@@ -75,7 +75,7 @@ body {
 @media screen and (max-width: 760px) {
 }
 /* For below 499px screen width */
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 500px) {
   /* Header */
   .header__title {
     color: var(--color-white);

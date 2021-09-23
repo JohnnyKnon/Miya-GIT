@@ -151,7 +151,7 @@ body {
   }
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 500px) {
   /* Intro */
   #main {
     height: 1450px;
