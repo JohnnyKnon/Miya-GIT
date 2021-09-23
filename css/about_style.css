@@ -80,7 +80,7 @@ body {
   margin-left: 20px;
   font-size: 35px;
   font-family: var(--font-korean);
-  font-weight: var(--font-weight-light);
+  font-weight: var(--font-weight-bold);
 }
 
 .intro__article {
