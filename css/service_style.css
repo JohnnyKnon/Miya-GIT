@@ -64,21 +64,46 @@ body {
 }
 /* For below 990px screen width */
 @media screen and (max-width: 990px) {
+  /* AboutService */
+  .aboutService {
+    justify-content: center;
+  }
+
+  .aboutService__img {
+    width: 350px;
+    height: 350px;
+  }
+
   .aboutService__title {
+    margin-top: 0px;
     padding-left: 20px;
   }
+
   .aboutService__txt {
     padding-left: 20px;
+    margin-top: 15px;
+    font-size: 14px;
   }
 }
-/* For below 760px screen width */
-@media screen and (max-width: 760px) {
-}
+
 /* For below 499px screen width */
 @media screen and (max-width: 500px) {
   /* Header */
   .header__title {
     color: var(--color-white);
     font-size: 55px;
+  }
+
+  /* AboutSerivce */
+
+  .aboutService__title {
+    margin-top: 0px;
+    padding-left: 20px;
+  }
+
+  .aboutService__txt {
+    padding-left: 20px;
+    margin-top: 15px;
+    font-size: 14px;
   }
 }
