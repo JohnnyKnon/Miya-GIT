@@ -5,12 +5,22 @@ body {
   /* mix-blend-mode */
   background-color: var(--color-white);
 }
+
+h3 {
+  font-size: 25px;
+  position: relative;
+  display: inline-block;
+  font-family: var(--font-korean);
+  font-weight: var(--noto-weight-regular);
+}
+
 /* Header Main */
 #header,
 #main {
   position: relative;
   max-width: 1200px;
   margin: auto;
+  background-color: var(--color-white);
 }
 
 /* Header */
@@ -30,17 +40,327 @@ body {
 #agree {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-content: center;
+  padding-bottom: 130px;
+}
+
+.agree__title {
+  font-family: var(--font-korean);
+  font-size: 25px;
+  margin: auto;
+  padding-bottom: 15px;
 }
 
 #agree__textarea {
+  position: relative;
+  text-align: justify;
   resize: none;
+  width: 80%;
+  padding: 35px;
+  line-height: 22px;
+  margin: auto;
+  color: grey;
 }
 
-/* For below 600px screen width */
-@media screen and (max-width: 600px) {
+.agree__checkbox {
+  padding-top: 15px;
+  text-align: center;
+}
+
+.agree__checkbox label {
+  font-size: 14px;
+  font-family: var(--font-korean);
+}
+
+/* Contact */
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.type {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: auto;
+  gap: 0 62px;
+}
+
+.type__wrap {
+  display: flex;
+  gap: 0 60px;
+  flex-wrap: wrap;
+}
+
+/* Work Checkbox */
+input.work__check[type="checkbox"] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+input.work__check[type="checkbox"] + label {
+  display: inline-block;
+  text-align: center;
+  padding-top: 2px;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  background-color: var(--color-blue-grey);
+  cursor: pointer;
+  color: var(--color-white);
+  transition: all 200ms ease-in-out;
+}
+
+input.work__check[type="checkbox"]:checked + label,
+input.work__check[type="checkbox"]:active + label {
+  background-color: var(--color-dark-grey);
+  transition: all 200ms ease-in-out;
+}
+/* ETC Checkbox */
+input.etc__check[type="checkbox"] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+input.etc__check[type="checkbox"] + label {
+  display: inline-block;
+  text-align: center;
+  padding-top: 2px;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  background-color: var(--color-blue-grey);
+  cursor: pointer;
+  color: var(--color-white);
+  transition: all 200ms ease-in-out;
+}
+
+input.etc__check[type="checkbox"]:checked + label,
+input.etc__check[type="checkbox"]:active + label {
+  background-color: var(--color-dark-grey);
+  transition: all 200ms ease-in-out;
+}
+
+/* Name */
+.name {
+  padding-top: 50px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.name__title {
+  letter-spacing: 55px;
+  margin-right: -30px;
+  font-family: var(--font-korean);
+}
+
+#name__text {
+  height: 55px;
+  width: 500px;
+  border: 0;
+  border-bottom: 1px solid var(--color-black);
+  font-size: 20px;
+  font-family: var(--font-korean);
+}
+
+/* Company */
+.company {
+  padding-top: 15px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+
+.company__title {
+  letter-spacing: 15px;
+  font-family: var(--font-korean);
+}
+
+#company__text {
+  height: 55px;
+  width: 505px;
+  border: 0;
+  border-bottom: 1px solid var(--color-black);
+  font-size: 20px;
+  font-family: var(--font-korean);
+}
+
+/* E-mail */
+
+.email {
+  padding-top: 15px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.email__title {
+  letter-spacing: 4px;
+  font-family: var(--font-korean);
+}
+
+#email__text {
+  height: 55px;
+  width: 505px;
+  border: 0;
+  border-bottom: 1px solid var(--color-black);
+  font-size: 20px;
+  font-family: var(--font-korean);
+}
+
+/* Phone */
+.phone {
+  padding-top: 15px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+
+.phone__title {
+  letter-spacing: 15px;
+  font-family: var(--font-korean);
+}
+
+#phone__text {
+  height: 55px;
+  width: 505px;
+  border: 0;
+  border-bottom: 1px solid var(--color-black);
+  font-size: 20px;
+  font-family: var(--font-korean);
+}
+
+/* Contents */
+.contents {
+  padding-top: 50px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+}
+
+.contents__title {
+  letter-spacing: 55px;
+  margin-right: -28px;
+  font-family: var(--font-korean);
+}
+
+#content__text {
+  height: 250px;
+  width: 500px;
+  font-size: 15px;
+  font-family: var(--font-korean);
+}
+
+/* Send */
+.send {
+  border: 2px solid var(--color-black);
+  padding: 10px 50px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  font-family: var(--font-korean);
+  transition: all var(--anime-duration) ease-in-out;
+}
+
+.send:hover {
+  color: var(--color-black);
+  background-color: var(--color-white);
+  transition: all var(--anime-duration) ease-in-out;
+}
+
+/* Map */
+#map {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.map__title {
+  margin: auto;
+}
+
+iframe {
+  padding-top: 50px;
+  margin: auto;
+}
+
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
   /* Header */
   .header__title {
     font-size: 55px;
+  }
+
+  /* Type */
+  .type {
+    flex-direction: column;
+  }
+
+  .type__wrap {
+    gap: 8px;
+  }
+  input.work__check[type="checkbox"] + label {
+    width: 120px;
+  }
+
+  input.etc__check[type="checkbox"] + label {
+    width: 120px;
+  }
+
+  /* Name */
+  .name {
+    flex-direction: column;
+  }
+
+  #name__text {
+    width: 350px;
+  }
+  /* Company */
+  .company {
+    flex-direction: column;
+  }
+
+  #company__text {
+    width: 350px;
+  }
+  /* Email */
+  .email {
+    flex-direction: column;
+  }
+
+  #email__text {
+    width: 350px;
+  }
+  /* phone */
+  .phone {
+    flex-direction: column;
+  }
+
+  #phone__text {
+    width: 350px;
+  }
+  /* Contents */
+  #content__text {
+    width: 350px;
+  }
+
+  /* Map */
+  iframe {
+    width: 350px;
   }
 }
