@@ -8,20 +8,39 @@ body {
 /* Header Main */
 #header,
 #main {
+  position: relative;
   max-width: 1200px;
   margin: auto;
 }
 
 /* Header */
+#header {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 140px;
+  padding-right: 40px;
+}
+
 .header__title {
   font-family: var(--font-english);
   font-size: 70px;
-  position: relative;
-  top: 100px;
-  text-align: right;
 }
 
-/* Main
-________________________________ */
+/* Main agree */
+#agree {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-/* agree */
+#agree__textarea {
+  resize: none;
+}
+
+/* For below 600px screen width */
+@media screen and (max-width: 600px) {
+  /* Header */
+  .header__title {
+    font-size: 55px;
+  }
+}
