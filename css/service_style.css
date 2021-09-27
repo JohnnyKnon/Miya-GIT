@@ -35,6 +35,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  padding-bottom: 20px;
 }
 
 /* About Service Left box */
@@ -67,6 +68,86 @@ body {
   mix-blend-mode: difference;
 }
 
+/* Category */
+#category {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 150px;
+}
+
+.category__title {
+  font-family: var(--font-script);
+  font-size: 65px;
+  margin-left: 20px;
+  color: var(--color-white);
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--color-white);
+}
+
+.category__type {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.category__boxes {
+  width: 300px;
+  height: 400px;
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+}
+
+.category__titles {
+  font-family: var(--font-english);
+  color: var(--color-blue-grey);
+  font-size: 25px;
+  text-align: center;
+}
+
+.category__content {
+  text-align: center;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+/* Brand */
+#brand {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin-right: 20px;
+}
+
+.brand__img {
+  position: relative;
+  background: url("../image/ex-img2.jpg") no-repeat center/cover;
+  width: 400px;
+  height: 400px;
+  filter: grayscale(100%);
+}
+
+.brand__title {
+  position: absolute;
+  top: -50px;
+  left: 20px;
+  font-family: var(--font-english);
+  color: var(--color-white);
+  mix-blend-mode: difference;
+  font-size: 65px;
+}
+
+.brand__contents {
+  padding-right: 20px;
+  text-align: justify;
+  text-indent: 10px;
+  line-height: 30px;
+  width: 350px;
+  color: var(--color-white);
+}
+
 /* For below 1010px screen width */
 @media screen and (max-width: 1024px) {
   /* About Service */
@@ -84,7 +165,7 @@ body {
   }
 }
 
-/* For below 768px screen width */
+/* For below 919px screen width */
 @media screen and (max-width: 919px) {
   /* About Service */
   #aboutService {
@@ -113,14 +194,47 @@ body {
     width: 480px;
   }
 }
+/* For below 780px screen width */
+@media screen and (max-width: 780px) {
+  .brand__img {
+    width: 300px;
+    height: 300px;
+  }
 
-/* For below 768px screen width */
+  .brand__title {
+    font-size: 50px;
+  }
+
+  .brand__contents {
+    padding-right: 10px;
+
+    font-size: 15px;
+    width: 400px;
+    color: var(--color-white);
+  }
+}
+
+/* For below 735px screen width */
 @media screen and (max-width: 735px) {
+  /* Header */
+  .header__title {
+    font-size: 50px;
+  }
   /* About Service */
   .aboutService__title {
     width: 100%;
     left: 10px;
     top: 620px;
+  }
+
+  /* Brand */
+  #brand {
+    flex-direction: column;
+    align-content: center;
+    margin: auto;
+  }
+
+  .brand__contents {
   }
 }
 
@@ -162,7 +276,7 @@ body {
 @media screen and (max-width: 450px) {
   /* Header */
   .header__title {
-    font-size: 55px;
+    font-size: 40px;
   }
 
   /* About Service */
