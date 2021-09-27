@@ -59,8 +59,9 @@ body {
 }
 
 .aboutService__title {
+  font-family: var(--font-script);
   margin-top: -35px;
-  margin-left: 540px;
+  margin-left: 560px;
   font-size: 65px;
   color: var(--color-white);
   mix-blend-mode: difference;
@@ -97,8 +98,8 @@ body {
 
   .aboutService__title {
     position: absolute;
-    top: 370px;
-    left: 180px;
+    top: 400px;
+    left: 220px;
     transform: rotate(90deg);
   }
 
@@ -119,7 +120,7 @@ body {
   .aboutService__title {
     width: 100%;
     left: 10px;
-    top: 520px;
+    top: 620px;
   }
 }
 
