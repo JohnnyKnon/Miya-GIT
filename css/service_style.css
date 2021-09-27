@@ -114,14 +114,23 @@ body {
 }
 
 /* Brand */
-#brand {
+.sections {
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
   margin-right: 20px;
+  padding-bottom: 200px;
 }
 
-.brand__img {
+.sections-reverse {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  padding-bottom: 200px;
+}
+
+.sections__img {
   position: relative;
   background: url("../image/ex-img2.jpg") no-repeat center/cover;
   width: 400px;
@@ -129,7 +138,7 @@ body {
   filter: grayscale(100%);
 }
 
-.brand__title {
+.sections__title {
   position: absolute;
   top: -50px;
   left: 20px;
@@ -139,8 +148,17 @@ body {
   font-size: 65px;
 }
 
-.brand__contents {
+.sections__contents {
   padding-right: 20px;
+  text-align: justify;
+  text-indent: 10px;
+  line-height: 30px;
+  width: 350px;
+  color: var(--color-white);
+}
+
+.sections__contents-reverse {
+  padding-left: 20px;
   text-align: justify;
   text-indent: 10px;
   line-height: 30px;
@@ -196,21 +214,24 @@ body {
 }
 /* For below 780px screen width */
 @media screen and (max-width: 780px) {
-  .brand__img {
+  .sections__img {
     width: 300px;
     height: 300px;
   }
 
-  .brand__title {
+  .sections__title {
     font-size: 50px;
   }
 
-  .brand__contents {
+  .sections__contents {
     padding-right: 10px;
-
     font-size: 15px;
     width: 400px;
-    color: var(--color-white);
+  }
+
+  .sections__contents-reverse {
+    font-size: 15px;
+    width: 400px;
   }
 }
 
@@ -227,14 +248,29 @@ body {
     top: 620px;
   }
 
-  /* Brand */
-  #brand {
+  /* Sections */
+  .sections {
     flex-direction: column;
     align-content: center;
     margin: auto;
   }
 
-  .brand__contents {
+  .sections-reverse {
+    flex-direction: column;
+    align-content: center;
+    margin: auto;
+  }
+
+  .sections__contents {
+    padding-right: 0;
+  }
+
+  .sections__contents-reverse {
+    padding-left: 0;
+  }
+
+  .sections__img {
+    width: 400px;
   }
 }
 
@@ -295,10 +331,36 @@ body {
     padding-top: 48px;
     padding-left: 0;
   }
+
+  /* Sections */
+  .sections__img {
+    margin: auto;
+    width: 250px;
+    height: 250px;
+  }
+
+  .sections__title {
+    left: 0;
+  }
+
+  .sections__contents {
+    margin: auto;
+    width: 250px;
+  }
+
+  .sections__contents-reverse {
+    margin: auto;
+    width: 250px;
+  }
 }
 
 /* For below 600px screen width */
 @media screen and (max-width: 330px) {
+  /* About Service */
+  .aboutService__img {
+    width: 300px;
+  }
+
   .aboutService__title {
     width: 100%;
     transform: rotate(90deg);
