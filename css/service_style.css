@@ -12,7 +12,7 @@ body {
   justify-content: flex-end;
   max-width: 1200px;
   margin: auto;
-  padding-top: 140px;
+  padding-top: 90px;
   padding-right: 40px;
 }
 
@@ -29,10 +29,171 @@ body {
   margin: auto;
 }
 
+/* About Service */
+#aboutService {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/* About Service Left box */
+.aboutService__left__box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.aboutService__img {
+  width: 60%;
+}
+
+.aboutService__contents {
+  padding-top: 150px;
+  padding-left: 30px;
+  text-align: justify;
+  text-indent: 10px;
+  line-height: 30px;
+  width: 400px;
+  color: var(--color-white);
+}
+
+.aboutService__title {
+  margin-top: -35px;
+  margin-left: 540px;
+  font-size: 65px;
+  color: var(--color-white);
+  mix-blend-mode: difference;
+}
+
+/* For below 1010px screen width */
+@media screen and (max-width: 1024px) {
+  /* About Service */
+  .aboutService__img {
+    width: 600px;
+  }
+
+  .aboutService__title {
+    margin-left: 150px;
+  }
+
+  .aboutService__contents {
+    padding-top: 50px;
+    width: 320px;
+  }
+}
+
+/* For below 768px screen width */
+@media screen and (max-width: 919px) {
+  /* About Service */
+  #aboutService {
+    flex-direction: column-reverse;
+    flex-wrap: initial;
+  }
+
+  .aboutService__img {
+    width: 500px;
+  }
+
+  .aboutService__title {
+    position: absolute;
+    top: 370px;
+    left: 180px;
+    transform: rotate(90deg);
+  }
+
+  .aboutService__left__box {
+    flex-direction: column;
+  }
+
+  .aboutService__contents {
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 480px;
+  }
+}
+
+/* For below 768px screen width */
+@media screen and (max-width: 735px) {
+  /* About Service */
+  .aboutService__title {
+    width: 100%;
+    left: 10px;
+    top: 520px;
+  }
+}
+
+/* For below 720px screen width */
+@media screen and (max-width: 720px) {
+  /* About Service */
+  .aboutService__title {
+    transform: rotate(0);
+    top: 330px;
+    left: 0;
+  }
+
+  .aboutService__contents {
+    padding-top: 25px;
+  }
+}
+
 /* For below 600px screen width */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 560px) {
+  /* About Service */
+  .aboutService__img {
+    width: 480px;
+  }
+
+  .aboutService__title {
+    font-size: 45px;
+    left: 20px;
+    top: 330px;
+  }
+
+  .aboutService__contents {
+    width: 450px;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+}
+
+/* For below 600px screen width */
+@media screen and (max-width: 450px) {
   /* Header */
   .header__title {
     font-size: 55px;
+  }
+
+  /* About Service */
+  .aboutService__img {
+    width: 350px;
+  }
+
+  .aboutService__title {
+    font-size: 45px;
+    left: -135px;
+    top: 275px;
+  }
+
+  .aboutService__contents {
+    width: 330px;
+    padding-top: 48px;
+    padding-left: 0;
+  }
+}
+
+/* For below 600px screen width */
+@media screen and (max-width: 330px) {
+  .aboutService__title {
+    width: 100%;
+    transform: rotate(90deg);
+    left: -10px;
+    top: 450px;
+  }
+
+  .aboutService__contents {
+    width: 250px;
+    padding-top: 10px;
+    padding-left: 10px;
   }
 }

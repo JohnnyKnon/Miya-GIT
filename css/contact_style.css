@@ -81,11 +81,12 @@ h3 {
 
 .type {
   position: relative;
+  font-family: var(--font-korean);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   margin: auto;
-  gap: 0 62px;
+  gap: 0 65px;
 }
 
 .type__wrap {
@@ -103,7 +104,6 @@ input.work__check[type="checkbox"] {
 input.work__check[type="checkbox"] + label {
   display: inline-block;
   text-align: center;
-  padding-top: 2px;
   width: 200px;
   height: 40px;
   line-height: 40px;
@@ -127,7 +127,6 @@ input.etc__check[type="checkbox"] {
 input.etc__check[type="checkbox"] + label {
   display: inline-block;
   text-align: center;
-  padding-top: 2px;
   width: 200px;
   height: 40px;
   line-height: 40px;
@@ -150,6 +149,7 @@ input.etc__check[type="checkbox"]:active + label {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  gap: 50px;
 }
 
 .name__title {
@@ -160,7 +160,7 @@ input.etc__check[type="checkbox"]:active + label {
 
 #name__text {
   height: 55px;
-  width: 500px;
+  width: 450px;
   border: 0;
   border-bottom: 1px solid var(--color-black);
   font-size: 20px;
@@ -174,7 +174,7 @@ input.etc__check[type="checkbox"]:active + label {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 5px;
+  gap: 56px;
 }
 
 .company__title {
@@ -184,7 +184,7 @@ input.etc__check[type="checkbox"]:active + label {
 
 #company__text {
   height: 55px;
-  width: 505px;
+  width: 450px;
   border: 0;
   border-bottom: 1px solid var(--color-black);
   font-size: 20px;
@@ -199,7 +199,7 @@ input.etc__check[type="checkbox"]:active + label {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 20px;
+  gap: 70px;
 }
 
 .email__title {
@@ -209,7 +209,7 @@ input.etc__check[type="checkbox"]:active + label {
 
 #email__text {
   height: 55px;
-  width: 505px;
+  width: 450px;
   border: 0;
   border-bottom: 1px solid var(--color-black);
   font-size: 20px;
@@ -223,7 +223,7 @@ input.etc__check[type="checkbox"]:active + label {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 5px;
+  gap: 55px;
 }
 
 .phone__title {
@@ -233,7 +233,7 @@ input.etc__check[type="checkbox"]:active + label {
 
 #phone__text {
   height: 55px;
-  width: 505px;
+  width: 450px;
   border: 0;
   border-bottom: 1px solid var(--color-black);
   font-size: 20px;
@@ -325,36 +325,44 @@ iframe {
   /* Name */
   .name {
     flex-direction: column;
+    gap: 20px;
   }
 
   #name__text {
-    width: 350px;
+    width: 300px;
   }
   /* Company */
   .company {
     flex-direction: column;
+    gap: 20px;
   }
 
   #company__text {
-    width: 350px;
+    width: 300px;
   }
   /* Email */
   .email {
+    gap: 20px;
     flex-direction: column;
   }
 
   #email__text {
-    width: 350px;
+    width: 300px;
   }
   /* phone */
   .phone {
+    gap: 20px;
     flex-direction: column;
   }
 
   #phone__text {
-    width: 350px;
+    width: 300px;
   }
   /* Contents */
+  .contents {
+    flex-direction: column;
+  }
+
   #content__text {
     width: 350px;
   }
