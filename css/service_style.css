@@ -73,7 +73,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-bottom: 150px;
+  padding-bottom: 120px;
 }
 
 .category__title {
