@@ -1,0 +1,115 @@
+#footer {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  padding-top: 10px;
+  flex-direction: column;
+  background-color: var(--color-black);
+}
+
+.footer__width {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1200px;
+}
+
+/* Footer top part */
+.footer__top__box {
+  margin-top: 50px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-footer-grey);
+}
+
+.footer__top__menu {
+  display: flex;
+  gap: 20px;
+}
+
+.top__menu__items a {
+  color: white;
+  font-family: var(--font-english);
+  transition: all var(--anime-duration) ease-in-out;
+}
+
+.top__menu__items a:hover {
+  color: var(--color-skyblue);
+  transition: all var(--anime-duration) ease-in-out;
+}
+
+.middle__border {
+  padding: 0 20px;
+  border-right: 1px solid var(--color-footer-grey);
+  border-left: 1px solid var(--color-footer-grey);
+}
+
+/* Footer Bottom part */
+.footer__bottom__box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.footer__title {
+  color: var(--color-white);
+  font-family: var(--font-korean);
+}
+
+.company__contents {
+  font-family: var(--font-korean);
+  line-height: 30px;
+  color: var(--color-white);
+}
+
+.office {
+  word-spacing: 20px;
+}
+
+.csCenter__tel {
+  margin-top: -10px;
+  color: var(--color-skyblue);
+  font-family: var(--font-korean);
+  font-size: 30px;
+}
+
+.certification {
+  padding-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 50px;
+}
+
+.kidp {
+  display: flex;
+  background: url("../image/kidp.png") no-repeat center/cover;
+  width: 100px;
+  height: 50px;
+}
+
+.woman {
+  display: flex;
+  background: url("../image/woman_logo.png") no-repeat center/cover;
+  width: 60px;
+  height: 60px;
+}
+
+.certification__txt {
+  color: var(--color-white);
+  text-align: center;
+  width: 600px;
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 75px;
+}
+
+@media screen and (max-width: 785px) {
+  #footer {
+    height: 700px;
+  }
+  .footer__bottom__box {
+    flex-direction: column;
+    align-content: center;
+  }
+}
