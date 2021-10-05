@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-white);
+}
+
+/* Header */
+#header {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 90px;
+    padding-left: 40px;
+    background-color: var(--color-white);
+}
+
+.header__title {
+    color: var(--color-black);
+    font-family: var(--font-english);
+    font-weight: var(--font-weight-bold);
+    font-size: 70px;
+    text-shadow: 10px 5px 1px  var(--color-blue-grey);
+}
+/* Main */
+#main{
+    max-width: 1200px;
+    margin: auto;
+    height: 400px;
+}
+/* Latest */
+#latest__portfolio{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: var(--color-white);
+}

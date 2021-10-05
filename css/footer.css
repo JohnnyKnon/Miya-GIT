@@ -96,12 +96,24 @@
 }
 
 .certification__txt {
-  color: var(--color-white);
+  font-family: var(--font-korean);
+  color: var(--color-footer-grey);
   text-align: center;
   width: 600px;
   font-size: 12px;
   line-height: 20px;
   margin-top: 75px;
+}
+
+.copyright{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.copyright__txt{
+  font-family: var(--font-english);
+  color: var(--color-footer-grey);
 }
 
 @media screen and (max-width: 785px) {
