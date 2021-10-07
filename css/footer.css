@@ -122,6 +122,19 @@
   }
   .footer__bottom__box {
     flex-direction: column;
-    align-content: center;
+    align-content: flex-start;
+    margin-left: 50px;
   }
+
+  .copyright{
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .footer__bottom__box{
+    align-content: center;
+    margin-left: 0;
+  }
+  
 }
