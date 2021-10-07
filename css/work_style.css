@@ -12,10 +12,12 @@ body{
 
 /* Header */
 #title{
+    background-color: var(--color-white);
     padding-top: 55px;
 }
 
 .header{
+    background-color: var(--color-white);
     display: flex;
     flex-direction: column;
     align-content: flex-start;
@@ -23,7 +25,6 @@ body{
 
 .title__txt{
     margin-left: 30px;
-    font-weight: var(--font-weight-light);
 }
 
 .title__description{
